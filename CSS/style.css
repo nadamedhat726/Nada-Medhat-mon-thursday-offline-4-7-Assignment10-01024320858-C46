@@ -1,0 +1,104 @@
+body{
+    background-color: #F7ECDE;
+}
+
+h1{
+    color:#352E28;
+    font-family:"Pacifico", cursive ;
+    font-weight: 500;
+    font-size: 50px;
+    position: relative;
+    display: inline-block;    
+}
+
+h1::after{
+position: absolute;
+content: "";
+width: 100%;
+    height: 20%;
+    left: 0;
+    bottom: 25px;
+    background-color: #FEC260;
+    
+    transition: height 350ms;
+    z-index: -1;
+}
+
+h1:hover::after{
+    height: 36%;
+}
+
+h2{
+    font-family: "Righteous", sans-serif;
+    background-image: linear-gradient(to right, #3EA55B, #B1AC49);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 25px;
+    font-weight: 500;
+}
+
+hr{
+    color: #064232;
+    border-top:double;
+}
+
+.title{
+    font-size: 16px;
+    font-weight: 600;
+    font-family: "PT Sans Caption", sans-serif;
+}
+
+.form-control:focus{
+    border-color: #FEC260;
+box-shadow:0 0 15px #FEC260;
+}
+
+.btn-col{
+    background-color: #e04f27;
+    color:white;
+}
+
+.btn:hover{
+    background-color: #BB4120;
+    color: #FFF5F2;
+}
+
+.visit{
+    background-color:#9db429 ;
+    border: none;
+}
+.visit:hover{
+    background-color: #8A9E23;
+}
+
+.delete{
+    background-color: #ec0520;
+    border: none;
+    font-size:16px ;
+    font-weight: 400;
+}
+.delete:hover{
+    background-color:#D30820;
+}
+
+.index , .name{
+    font-weight: 400;
+    font-size: 16px;
+    font-family: PT Sans Caption ;
+    color: rgb(33, 37, 41);
+}
+
+.box{
+    width: fit-content;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    
+}
+.box button{
+    background-color: white;
+    border: 0;
+}
+.bg{
+    background-color:rgba(0, 0, 0, 0.7) ;
+}
