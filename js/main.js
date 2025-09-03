@@ -13,12 +13,6 @@ if (localStorage.getItem('site') != null) {
 
 
 function submit() {
-    console.log("Name input:", bookmarkNameInput);
-console.log("URL input:", WebsiteURLInput);
-<<<<<<< HEAD
-=======
-    // validate both inputs
->>>>>>> d31f3720eaaebd5cf4454cd04deab170fb4b56e2
     if (validateForm(bookmarkNameInput) && validateForm(WebsiteURLInput)) {
         var site = {
             name: bookmarkNameInput.value.trim(),
@@ -32,35 +26,10 @@ console.log("URL input:", WebsiteURLInput);
         localStorage.setItem('site', JSON.stringify(sitedata));
         displaycontent();
     } else {
-<<<<<<< HEAD
-=======
-        // show warning box
->>>>>>> d31f3720eaaebd5cf4454cd04deab170fb4b56e2
         boxButton.classList.remove("d-none");
     }
 }
 
-<<<<<<< HEAD
-=======
-
-
-// function submit() {
-//     if(validateForm(bookmarkNameInput)&&validateForm(WebsiteURLInput)){
-//     var site = {
-//         name: bookmarkNameInput.value,
-//         link: WebsiteURLInput.value
-//     };
-//     sitedata.push(site)
-//     console.log(sitedata);
-//     clear();
-//     localStorage.setItem('site', JSON.stringify(sitedata))
-//     displaycontent();
-// }else{
-//     boxButton.classList.remove("d-none")
-// }
-// }
-
->>>>>>> d31f3720eaaebd5cf4454cd04deab170fb4b56e2
 function clear() {
     bookmarkNameInput.value= null;
     WebsiteURLInput.value = null;
